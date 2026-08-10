@@ -5,7 +5,7 @@ icon: brain
 
 # Query-of-Thought — Analytical Intellect
 
-Integrating **<code class="expression">space.vars.db_engine</code>** directly into the intellect enables <code class="expression">space.vars.agent_name</code> to move beyond traditional Chain-of-Thought (CoT) into **Query-of-Thought (QoT)** — where every reasoning step can be empirically verified through structured queries.
+Integrating **DuckDB** directly into the intellect enables **Ava007** to move beyond traditional Chain-of-Thought (CoT) into **Query-of-Thought (QoT)** — where every reasoning step can be empirically verified through structured queries.
 
 ## The QoT Paradigm
 
@@ -99,7 +99,7 @@ If `noise_ratio > 0.3`, the state is too noisy for confident decision — reject
 
 ## Procedural Skill Indexing
 
-Her **SkillOpt** procedural artifacts (`best_skill.md`) are no longer static documents but are **indexed within <code class="expression">space.vars.db_engine</code>**. The meta-controller performs a **Directed Stochastic Skill Search**:
+Her **SkillOpt** procedural artifacts (`best_skill.md`) are no longer static documents but are **indexed within DuckDB**. The meta-controller performs a **Directed Stochastic Skill Search**:
 
 | Signal | Weight | Source |
 | --- | --- | --- |

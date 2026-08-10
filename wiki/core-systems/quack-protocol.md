@@ -5,7 +5,7 @@ icon: wifi
 
 # Quack Remote Protocol
 
-The **<code class="expression">space.vars.protocol_name</code> Remote Protocol** is DuckDB's native remote access protocol, providing the exoskeleton with a low-latency, remote-access method for the Big Lake. It mirrors the speed requirements of systems like **Codex-Spark** (1,000+ tokens/second), ensuring analytical queries never become the bottleneck.
+The **Quack Remote Protocol** is DuckDB's native remote access protocol, providing the exoskeleton with a low-latency, remote-access method for the Big Lake. It mirrors the speed requirements of systems like **Codex-Spark** (1,000+ tokens/second), ensuring analytical queries never become the bottleneck.
 
 ## Protocol Architecture
 

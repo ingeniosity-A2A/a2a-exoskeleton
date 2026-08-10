@@ -5,11 +5,11 @@ icon: database
 
 # Big Lake Server — Core-Membrane
 
-The "Big Lake" serves as the **central repository** for all of <code class="expression">space.vars.agent_name</code>'s experiences, functioning as the memory bank used in distributed RL architectures like **Agent57**. Built on **<code class="expression">space.vars.db_engine</code>**, it provides a high-performance, columnar analytical engine embedded directly within the exoskeleton's core-membrane.
+The "Big Lake" serves as the **central repository** for all of **Ava007's** experiences, functioning as the memory bank used in distributed RL architectures like **Agent57**. Built on **DuckDB**, it provides a high-performance, columnar analytical engine embedded directly within the exoskeleton's core-membrane.
 
 ## Structured Experience Replay
 
-While standard agents use simple replay buffers (FIFO queues of state-action pairs), <code class="expression">space.vars.agent_name</code> uses **<code class="expression">space.vars.db_engine</code>** to store and query full trajectories. This enables:
+While standard agents use simple replay buffers (FIFO queues of state-action pairs), **Ava007** uses **DuckDB** to store and query full trajectories. This enables:
 
 * **Relational Reasoning** — Complex SQL queries across past hidden states, action outcomes, and environmental observations
 * **Temporal Pattern Mining** — Window functions and time-series analysis over millions of experience frames

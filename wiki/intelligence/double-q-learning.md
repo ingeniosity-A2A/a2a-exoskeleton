@@ -17,7 +17,7 @@ Standard Q-learning suffers from a fundamental flaw: because the max operator se
 
 ## Twin-Critic Analysis
 
-<code class="expression">space.vars.agent_name</code> stores the estimates of her **Twin Critics** within the Big Lake. By analyzing the **distribution** of these values over millions of past frames, she can dynamically adjust her **Clipped Double Q-learning** bounds.
+**Ava007** stores the estimates of her **Twin Critics** within the Big Lake. By analyzing the **distribution** of these values over millions of past frames, she can dynamically adjust her **Clipped Double Q-learning** bounds.
 
 ### The Innovation
 

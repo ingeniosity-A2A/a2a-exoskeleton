@@ -15,7 +15,12 @@ Rather than loading the model context window with harness instructions, schemas,
 
 ## The Four-Layer Stack
 
-{% include ".gitbook/includes/architecture-stack.md" %}
+| Layer | Name | Function | Core Technology |
+| --- | --- | --- | --- |
+| **Layer 1** | Foundation | Bare-metal compute, storage, networking | Apache Products |
+| **Layer 2** | Core-Membrane | Analytical memory and experience replay | DuckDB + Quack Protocol |
+| **Layer 3** | Capability | Unified primitives and tool abstraction | Integrated Capability Primitives |
+| **Layer 4** | Orchestration | Timeline-based agent coordination | GSAP-inspired ADK |
 
 ```mermaid
 graph TD
@@ -46,7 +51,7 @@ In this model, the system alternates between:
 * **Generative Mode**: Standard LLM inference producing novel reasoning chains
 * **Analytic Mode**: Structured SQL queries against the Big Lake to verify, retrieve, and ground generative outputs
 
-This transforms <code class="expression">space.vars.agent_name</code>'s intellect from a purely generative process into a hybrid model, where every generative step can be empirically verified against historical data stored in the Big Lake.
+This transforms **Ava007's** intellect from a purely generative process into a hybrid model, where every generative step can be empirically verified against historical data stored in the Big Lake.
 
 {% hint style="info" %}
 The Analytic-Generative hybrid is inspired by architectures like **Agent57** (DeepMind, 2020), which used distributed replay memory banks to achieve superhuman performance across 57 Atari games. The Big Lake serves an analogous role — but with structured relational queries instead of simple buffers.

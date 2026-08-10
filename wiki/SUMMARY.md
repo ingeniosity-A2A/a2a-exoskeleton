@@ -10,6 +10,7 @@
 * [Orchestrated easeReverse — Asymmetrical Rollback](architecture/easeReverse-orchestration.md)
 * [No-GPU Intelligence Stack](architecture/no-gpu-intelligence-stack.md)
 * [Benchmark & Scaling Metrics](architecture/benchmark-scaling-metrics.md)
+* [Inject / Build / Decline Decision Matrix](architecture/decision-matrix.md)
 
 ## Core Systems
 

@@ -1,8 +1,0 @@
-# Space-level variables used across pages
-repo: https://github.com/nicepkg/a2a-exoskeleton
-version: "3.0"
-agent_name: "Ava007"
-protocol_name: "Quack"
-db_engine: "DuckDB"
-orchestration: "GSAP-inspired"
-org: "Ingeniosity"
