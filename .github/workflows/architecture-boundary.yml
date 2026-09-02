@@ -1,0 +1,28 @@
+name: Exoskeleton Architecture Boundary
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  boundary:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify Body boundary
+        run: |
+          set -e
+          echo 'Checking that Exoskeleton contains no cognitive state or reasoning ownership.'
+          if grep -RIn --exclude-dir=.git --exclude-dir=target --exclude='*.lock' \
+            -E 'cognitive_state|chain_of_thought|(^|[^A-Za-z])reasoning([^A-Za-z]|$)|Munchausen|GRPO|IQN' \
+            crates exoskeleton 2>/dev/null; then
+            echo 'ERROR: cognitive implementation leaked into Exoskeleton runtime.'
+            exit 1
+          fi
+          echo 'Exoskeleton boundary clean.'
