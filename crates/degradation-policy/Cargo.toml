@@ -1,0 +1,5 @@
+[package]
+name = "degradation-policy"
+version = "0.1.0"
+edition = "2021"
+description = "Explicit non-cognitive runtime failure and degradation policy"
