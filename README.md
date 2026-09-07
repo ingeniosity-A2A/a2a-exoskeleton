@@ -12,7 +12,13 @@ a2a-exoskeleton (this) — substrate highway
 Agent-X (capabilities + consoles)
 ```
 
-See [ORGANIZATION.md](ORGANIZATION.md) · [OFFICIAL-THREE-REPO.md](OFFICIAL-THREE-REPO.md).
+See [ORGANIZATION.md](ORGANIZATION.md) · [OFFICIAL-THREE-REPO.md](OFFICIAL-THREE-REPO.md) · [UI-AUTHORITY.md](UI-AUTHORITY.md).
+
+## UI authority
+
+**The Agent Browser controls all systems UI and is located here.** The
+substrate routes that authority (interface layer + verified firmware
+registry mount) — it does not host UI. See [UI-AUTHORITY.md](UI-AUTHORITY.md).
 
 ## Keep-out
 
@@ -26,6 +32,8 @@ No intellect identity, no Bento UI, no ESA/Help app shells, no manifesto gate.
 | `exoskeleton/db` | Dual-tier Duck |
 | `exoskeleton/transport` | Zero-copy bridge |
 | `exoskeleton/capabilities` | Capability contracts |
+| `exoskeleton/interface` | Intent/Observation contracts + **UI authority routing** |
+| `exoskeleton/firmware` | Firmware registry, manifests, verified mounts |
 | `wiki/` | Architecture reference |
 
 Archive misfits → **QAG-MemBrain**.

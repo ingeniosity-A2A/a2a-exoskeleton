@@ -9,11 +9,13 @@ a2a-exoskeleton/
 │   ├─ db/             # dual-tier Duck
 │   ├─ transport/      # zero-copy / Arrow path
 │   ├─ compute/        # algorithmic helpers
-│   └─ capabilities/   # capability *contracts* (not Agent-X skills)
+│   ├─ capabilities/   # capability *contracts* (not Agent-X skills)
+│   ├─ interface/      # Intent/Observation contracts + UI authority routing
+│   └─ firmware/       # registry + manifests (verified mounts only)
 ├─ wiki/               # architecture docs (GSAP orchestration notes, Duck, …)
 ├─ main.py · pyproject.toml
 ├─ scripts/            # ops (prefer no monorepo Ava tickets)
-└─ OFFICIAL-THREE-REPO.md · ORGANIZATION.md
+└─ OFFICIAL-THREE-REPO.md · ORGANIZATION.md · UI-AUTHORITY.md
 ```
 
 ## Organization status
@@ -25,7 +27,8 @@ a2a-exoskeleton/
 | Rust zip dump removed | **Done** |
 | Wiki architecture docs | **Present** |
 | Arrow Flight production path | **Fill next** |
-| Firmware registry + hash mount | **Fill next** |
+| Firmware registry + hash mount | **Present** — agent-browser mounted (authority: ui, hash-verified) |
+| UI authority routing | **Present** — Agent Browser controls all systems UI, homed here (UI-AUTHORITY.md) |
 | DegradationPolicy / honest mmap benches | **Fill next** |
 | SemVer interface package for other two repos | **Fill next** |
 

@@ -11,7 +11,7 @@
     "requires": { "type": "array", "items": { "type": "string" } },
     "entry": { "type": "string" },
     "hash_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
-    "authority": { "type": "string", "enum": ["read", "local", "network", "device"] },
+    "authority": { "type": "string", "enum": ["read", "local", "network", "device", "ui"] },
     "tests": { "type": "array", "items": { "type": "string" } }
   },
   "additionalProperties": false
