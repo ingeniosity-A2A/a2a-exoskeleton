@@ -7,6 +7,7 @@
 * [A2A Exoskeleton Architecture](architecture/overview.md)
 * [Integrated Capability Primitives](architecture/capability-primitives.md)
 * [GSAP Orchestration Engine](architecture/gsap-orchestration.md)
+* [Instant Injection & Fluid Learning](architecture/instant-injection-fluid-learning.md)
 * [Orchestrated easeReverse — Asymmetrical Rollback](architecture/easeReverse-orchestration.md)
 * [No-GPU Intelligence Stack](architecture/no-gpu-intelligence-stack.md)
 * [Benchmark & Scaling Metrics](architecture/benchmark-scaling-metrics.md)

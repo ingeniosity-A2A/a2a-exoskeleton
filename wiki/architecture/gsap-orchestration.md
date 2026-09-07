@@ -38,6 +38,10 @@ Just as a **GSAP Timeline** serves as a central engine to play, pause, or scrub 
 The **easeReverse** row completes the GSAP-to-Substrate isomorphic mapping. See the dedicated page: [Orchestrated easeReverse](easeReverse-orchestration.md) for the full breakdown including per-tween isolation and substrate code.
 {% endhint %}
 
+{% hint style="info" %}
+The orchestration layer borrows GSAP's **timeline structure**. One layer down, the [Instant Injection & Fluid Learning](instant-injection-fluid-learning.md) kernel borrows GSAP's **engine mechanics** — `gsap.set()`, MorphSVG interpolation, stagger, and `seek()` — as non-graphical compute primitives.
+{% endhint %}
+
 ## Chaining and Overlapping
 
 ### Sequential Chaining
