@@ -1,51 +1,58 @@
 # Repository Consolidation — Official Hierarchy
 
 **Date:** 2026-09-16  
-**Authority:** ingeniosity-A2A / Ava007
+**Authority:** ingeniosity-A2A / Ava007  
+**Void merger:** Complete
 
 ## Canonical Topology
 
 ```text
 Cybernetic-Ava007                    ← Primary Intellect (sovereign)
   └── a2a-exoskeleton                ← Substrate / execution boundary (this repo)
+        ├── void/                    ← Curation Workstation (Void VS Code fork reference)
         ├── branch: forged-ai-filing-os
         └── branch: fapo-ran
               └── merges into
                     Ava007-Omni-OS   ← Edge / modem / telemetry bridge
                       └── Agent-X    ← Skills + consoles surface
+
+QAG-MemBrain                         ← Memory authority (Core-Membrain absorbed)
 ```
 
-## Branch Status (this repo)
+## Branch / Folder Status (this repo)
 
-| Branch | Points to / Role |
-|--------|------------------|
+| Path | Role |
+|------|------|
 | `main` | Core a2a-exoskeleton substrate |
-| `forged-ai-filing-os` | SPARC + turbovec + PDF/Image Lens + Void mapping (see `ingeniosity-A2A/forged-ai-filing-os`) |
-| `fapo-ran` | RAN capability, FAPO Lyapunov, SafetyEnvelope (see `ingeniosity-A2A/fapo-ran`) |
+| `void/` | **Curation Workstation** — SPARC-mapped Void reference (merged) |
+| `forged-ai-filing-os` (branch) | SPARC + turbovec + PDF/Image Lens |
+| `fapo-ran` (branch) | RAN capability, FAPO Lyapunov, SafetyEnvelope |
+| `wiki/` | System wiki (gitbook-ingest absorbed) |
 
 ## Merge & Delete Schedule
 
 | Source | Action | Destination | Final |
 |--------|--------|-------------|-------|
-| **Core-Membrain** | Merge memory / graph / context-lake | **QAG-MemBrain** | Delete empty repo |
-| **gitbook-ingest** | Merge docs-pipeline / wiki material | System wiki (a2a-exoskeleton/wiki or Cybernetic docs) | Delete empty repo |
-| **Ava007** | Split | Intellect → **Cybernetic-Ava007**<br>Memory/rest → **QAG-MemBrain**<br>Edge → **Ava007-Omni-OS**<br>Skills surface → **Agent-X** | Delete empty repo |
+| **Core-Membrain** | Merged | **QAG-MemBrain** (`memory/core-membrain/`) | Delete empty repo |
+| **gitbook-ingest** | Merged | `wiki/gitbook-ingest/` | Delete empty repo |
+| **Ava007** | Split | Intellect → Cybernetic-Ava007; Memory → QAG-MemBrain; Edge → Omni-OS | Delete empty repo |
+| **Void** (upstream) | Reference merged | `void/` (this repo) | Upstream stays archived; we own the mapping |
 
 ## Install Rule (no double-install)
 
-- Install `a2a-exoskeleton` once (this repo).
-- Install `fapo-ran-capability` from the `fapo-ran` branch or the standalone `fapo-ran` repo (thin `ava007.capabilities` surface only).
+- Install `a2a-exoskeleton` once.
+- Install `fapo-ran-capability` from the `fapo-ran` branch or standalone repo (thin `ava007.capabilities` only).
 - Do **not** publish a competing top-level `ava007` package from any other repo.
-- TypeScript surfaces (Ava007 legacy UI, QAG-MemBrain, Agent-X) remain separate runtimes.
+- Void is a *fork reference*, not an npm/pip package of this monorepo.
 
-## Related Live Repos (post-consolidation)
+## Related Live Repos
 
 - `Cybernetic-Ava007` — Intellect only
-- `a2a-exoskeleton` — Substrate (this repo)
-- `forged-ai-filing-os` — Intelligence filing OS (absorbed via branch)
-- `fapo-ran` — RAN capability (absorbed via branch)
+- `a2a-exoskeleton` — Substrate + Void workstation (this repo)
+- `forged-ai-filing-os` — Intelligence filing OS
+- `fapo-ran` — RAN capability
 - `Ava007-Omni-OS` — Edge bridge
 - `Agent-X` — Skills + consoles
-- `QAG-MemBrain` — Memory authority (receives Core-Membrain)
+- `QAG-MemBrain` — Memory authority
 
-Empty shells to delete after content verification: `gitbook-ingest`, `Core-Membrain`, `Ava007`.
+Empty shells to delete after verification: `gitbook-ingest`, `Core-Membrain`, `Ava007`.
