@@ -1,39 +1,29 @@
-# a2a-exoskeleton — Runtime substrate
+# a2a-exoskeleton
 
-**Layer-2 only.** Non-cognitive. Arrow / zero-copy, dual-tier DuckDB, timeline, firmware mount path.
+**A2A Exoskeleton Ava007** — O(1) Context Orchestration Substrate | No-GPU Intelligence Stack | Dual-Tier DuckDB
+
+## Official Hierarchy
 
 ```text
-Cybernetic-Ava007 (intellect)
-        │ intent / observation
-        ▼
-a2a-exoskeleton (this) — substrate highway
-        │ mounts skills / routes execution
-        ▼
-Agent-X (capabilities + consoles)
+Cybernetic-Ava007
+  └── a2a-exoskeleton          ← you are here
+        ├── forged-ai-filing-os (branch)
+        └── fapo-ran            (branch)
+              └── Ava007-Omni-OS
+                    └── Agent-X
 ```
 
-See [ORGANIZATION.md](ORGANIZATION.md) · [OFFICIAL-THREE-REPO.md](OFFICIAL-THREE-REPO.md) · [UI-AUTHORITY.md](UI-AUTHORITY.md).
+See [CONSOLIDATION.md](CONSOLIDATION.md) for the full merge/delete plan and install rules.
 
-## UI authority
+## Branches
 
-**The Agent Browser controls all systems UI and is located here.** The
-substrate routes that authority (interface layer + verified firmware
-registry mount) — it does not host UI. See [UI-AUTHORITY.md](UI-AUTHORITY.md).
+- `main` — core substrate
+- `forged-ai-filing-os` — SPARC + turbovec intelligence layer
+- `fapo-ran` — RAN / FAPO capability
 
-## Keep-out
+## Boundary
 
-No intellect identity, no Bento UI, no ESA/Help app shells, no manifesto gate.
-
-## Package layout
-
-| Path | Role |
-|------|------|
-| `exoskeleton/core` | Timeline, types |
-| `exoskeleton/db` | Dual-tier Duck |
-| `exoskeleton/transport` | Zero-copy bridge |
-| `exoskeleton/capabilities` | Capability contracts |
-| `exoskeleton/interface` | Intent/Observation contracts + **UI authority routing** |
-| `exoskeleton/firmware` | Firmware registry, manifests, verified mounts |
-| `wiki/` | Architecture reference |
-
-Archive misfits → **QAG-MemBrain**.
+This repo is the **execution substrate**.  
+Intellect lives in **Cybernetic-Ava007**.  
+Skills/consoles live in **Agent-X**.  
+Memory authority lives in **QAG-MemBrain**.
