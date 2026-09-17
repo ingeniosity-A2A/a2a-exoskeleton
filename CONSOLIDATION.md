@@ -1,49 +1,35 @@
 # Repository Consolidation — Official Hierarchy
 
-**Date:** 2026-09-17  
-**Authority:** ingeniosity-A2A / Ava007  
-**Curation workstation brand:** **Tekton Core** (formerly Void; path `void/`)  
-**Omni role:** A2A / edge branch of Exoskeleton
+**Forged product name:** **Forged-Filing-Sys** (formerly Forged-AI-Filing-OS)
 
 ## Canonical Topology
 
 ```text
-Cybernetic-Ava007                         ← Primary Intellect
-  └── a2a-exoskeleton                     ← Substrate (THIS REPO)
-        ├── main                           ← Core (DuckDB, Arrow transport, kernel)
-        ├── forged/                        ← Forged-AI-Filing-OS (merge in progress)
-        ├── void/                          ← Tekton Core (curation workstation)
-        ├── branch: fapo-ran               ← RAN / FAPO
-        └── Ava007-Omni-OS                 ← A2A / EDGE BRANCH
-              └── Agent-X                   ← Skills + consoles (client)
+Cybernetic-Ava007                    ← Intelligence / firmware / ingestion
+  └── a2a-exoskeleton                ← Substrate (this repo)
+        ├── void/ · tekton-core      ← Curation workstation (IDE)
+        ├── forged/                  ← Forged-Filing-Sys (canonical limb)
+        ├── exoskeleton/             ← runtime / orchestration / transport
+        └── → Ava007-Omni-OS         ← Edge / Omnibus integration only
+              └── Agent-X            ← Execution adapters
 
-QAG-MemBrain                              ← Memory authority
+QAG-MemBrain                         ← Memory authority
+forged-ai-filing-os (GitHub)         ← HISTORICAL source only
 ```
 
-## Token tax / harness flaw — who solves what
+## Forged merge status (authoritative)
 
-| Layer | Role |
-|-------|------|
-| **Tekton Core** | Curate before promotion (reduce volume) |
-| **Forged** | Govern F0→F3; classify Skills vs Intelligence; stop blind JSON-as-source-of-truth **upstream** |
-| **Exoskeleton** | **Runtime defense:** Arrow columnar state + Flight + DuckDB in-place zero-copy |
+| Item | State |
+|------|--------|
+| Source repository `forged-ai-filing-os` | **HISTORICAL** |
+| Canonical implementation | **a2a-exoskeleton/forged/** |
+| Product name | **Forged-Filing-Sys** |
+| New development | **This repo only** |
+| Omnibus/forged_ai_filing_os | Integration consumer / pointer — not a second implementation |
+| Cybernetic-Ava007 | Intelligence authority; emits IR into Forged contracts |
 
-Forged reduces what enters the hot path; **Exoskeleton** eliminates pack/unpack on the hot path. See `void/TOKEN_TAX_DEFENSE.md`.
+## Rule
 
-## Ownership Rules
+> Intelligence is promoted. Skills are packaged. Curation decides. **Forged-Filing-Sys records.** Sandboxes execute.
 
-| Concern | Owner |
-|---------|--------|
-| Intellect | Cybernetic-Ava007 |
-| Execution + zero-copy membrane | **a2a-exoskeleton** |
-| Forged filing | Merged into **a2a-exoskeleton/forged/** |
-| Curation IDE | **Tekton Core** (`void/`) |
-| A2A / Omnibus / Agent Browser | **Ava007-Omni-OS** |
-| Skills + Bento consoles | Agent-X (client) |
-| Memory authority | QAG-MemBrain |
-
-## Install Rule
-
-- Install **a2a-exoskeleton** once.
-- Forged is a layer under Exoskeleton, not a competing top-level OS.
-- Omni-OS is the edge/A2A branch, not above Exoskeleton.
+Do **not** put Refactoring Intelligence inside `forged/` as if Forged owned cognition. Unify **contracts and data flow**, not ownership boundaries.

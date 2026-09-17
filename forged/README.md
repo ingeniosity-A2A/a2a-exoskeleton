@@ -1,51 +1,34 @@
-# Forged limb of a2a-exoskeleton
+# Forged-Filing-Sys
 
-**Status:** Merge in progress (2026-09-17)
+**Canonical Exoskeleton limb** for filing, artifact lifecycle (F0→F3), manifests, stores, and explorer contracts.
 
-Forged-AI-Filing-OS is the intelligence / filing layer of the **Exoskeleton substrate**.
-It is **not** a second top-level OS.
+**Product name:** Forged-Filing-Sys (formerly Forged-AI-Filing-OS).  
+**Historical source repo:** `ingeniosity-A2A/forged-ai-filing-os` (no new feature development there).
 
-## Source of truth (until full tree copy is complete)
+## Owns
 
-| Item | Location |
-|------|----------|
-| Full package + forging pipeline | https://github.com/ingeniosity-A2A/forged-ai-filing-os |
-| Canonical contract | `forged-ai-filing-os/docs/FORGED_FILE_STANDARD.md` (v1.2.0) |
-| Package version | `2.8.0-exoskeleton-substrate` |
-| This limb | `a2a-exoskeleton/forged/` (merge landing zone) |
+- Forged File Standard
+- Identify → normalize → version → validate → store → manifest → index → expose → retrieve
+- RocksDB Skills control plane / DuckDB Intelligence stores (as filing surfaces)
+- Explorer / BENTO binding contracts
 
-## Hierarchy
+## Does NOT own
+
+- Cognitive authority (Cybernetic-Ava007)
+- Refactoring Intelligence engine (Ava007 ingestion)
+- Skill *firmware* definitions (Ava007 `skills/`)
+- Edge Omnibus second implementation (Omni-OS is integration pointer only)
+
+## Pipeline
 
 ```text
-a2a-exoskeleton
-  ├── main / exoskeleton/     ← runtime substrate
-  ├── forged/                 ← THIS DIR — Forged filing merged here
-  ├── void/                   ← curation workstation
-  └── Ava007-Omni-OS (A2A)    ← edge / Omnibus / Agent Browser branch
+Cybernetic-Ava007  →  Intelligence IR (stream / Arrow)
+        ↓
+  Forged-Filing-Sys contract (F0→F3)
+        ↓
+  a2a-exoskeleton runtime
+        ↓
+  Agent-X / sandbox
 ```
 
-## Install
-
-Until the full package is vendored under this tree:
-
-```bash
-# Preferred long-term: single install from a2a-exoskeleton once merge completes
-pip install -e .
-
-# Interim: install forged package from sibling repo
-pip install -e ../forged-ai-filing-os
-python -m forged_ai_filing_os.main init
-python -m forged_ai_filing_os.main validate
-```
-
-## Merge checklist
-
-- [x] Hierarchy docs on a2a-exoskeleton + Omni-OS
-- [x] `forged/` landing zone on Exoskeleton main
-- [ ] Copy `forged_ai_filing_os/forging/*` into this tree
-- [ ] Copy `docs/FORGED_FILE_STANDARD.md` + config YAML
-- [ ] Wire `exoskeleton/capabilities` ↔ Forged Capability = Tools + Harness
-- [ ] Point Omni Omnibus Agent Browser at Forged explorer contract
-- [ ] Archive or thin-pointer standalone `forged-ai-filing-os` after verify
-
-See root [CONSOLIDATION.md](../CONSOLIDATION.md).
+See root `CONSOLIDATION.md` and historical repo `RENAME.md`.
