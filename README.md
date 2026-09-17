@@ -6,24 +6,28 @@
 
 ```text
 Cybernetic-Ava007
-  └── a2a-exoskeleton          ← you are here
-        ├── forged-ai-filing-os (branch)
-        └── fapo-ran            (branch)
-              └── Ava007-Omni-OS
-                    └── Agent-X
+  └── a2a-exoskeleton          ← YOU ARE HERE (substrate)
+        ├── forged-ai-filing-os   ← Forged filing MERGED into this substrate
+        ├── fapo-ran
+        └── Ava007-Omni-OS       ← A2A / EDGE BRANCH OF EXOSKELETON
+              └── Agent-X           ← Skills + consoles (client)
 ```
 
-See [CONSOLIDATION.md](CONSOLIDATION.md) for the full merge/delete plan and install rules.
+See [CONSOLIDATION.md](CONSOLIDATION.md) for merge plan and install rules.
 
-## Branches
+## Branches / limbs
 
-- `main` — core substrate
-- `forged-ai-filing-os` — SPARC + turbovec intelligence layer
-- `fapo-ran` — RAN / FAPO capability
+| Name | Role |
+|------|------|
+| `main` | Core substrate |
+| `forged-ai-filing-os` | SPARC + turbovec + forging + Lens (merge in progress) |
+| `fapo-ran` | RAN / FAPO |
+| **Ava007-Omni-OS** (repo as A2A branch) | Edge bridge, Omnibus hub, Agent Browser ownership |
 
 ## Boundary
 
-This repo is the **execution substrate**.  
-Intellect lives in **Cybernetic-Ava007**.  
-Skills/consoles live in **Agent-X**.  
-Memory authority lives in **QAG-MemBrain**.
+- This repo = **execution substrate** + Forged intelligence layer (merge).
+- Intellect → **Cybernetic-Ava007**.
+- Edge / A2A / Omnibus → **Ava007-Omni-OS** (branch of Exoskeleton).
+- Skills/consoles → **Agent-X** (does not own Agent Browser).
+- Memory → **QAG-MemBrain**.
