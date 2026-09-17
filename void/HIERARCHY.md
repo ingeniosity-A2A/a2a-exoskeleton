@@ -1,13 +1,14 @@
-# Void in the Official Hierarchy
+# Tekton Core in the Official Hierarchy
+
+**Brand:** Tekton Core (formerly Void). Path: `void/`.
 
 ```text
-Cybernetic-Ava007                    ← Sole Intellect (Core-Q²)
+Cybernetic-Ava007                    ← Sole Intellect
   └── a2a-exoskeleton                ← Substrate
-        ├── void/                    ← Curation Workstation (IDE)
-        ├── forged-ai-filing-os      ← SPARC + turbovec
-        └── fapo-ran                 ← RAN / FAPO
-              └── Ava007-Omni-OS     ← Edge / modem
-                    └── Agent-X      ← Skills + consoles
+        ├── void/                    ← Tekton Core (curation IDE)
+        ├── forged/                  ← Forged filing
+        └── Ava007-Omni-OS           ← A2A / edge branch
+              └── Agent-X              ← Skills + consoles
 
 QAG-MemBrain                         ← Memory authority
 ```
@@ -15,9 +16,9 @@ QAG-MemBrain                         ← Memory authority
 | Concern | Owner |
 |---------|--------|
 | Reason / decide / adapt | Cybernetic-Ava007 |
-| Curate / edit / checkpoint / package in IDE | **Void (this)** |
-| File / search / MoE / intake pipelines | forged-ai-filing-os |
-| Radio control | fapo-ran |
+| Curate / edit / checkpoint / package in IDE | **Tekton Core** |
+| File / forge / search / intake pipelines | Forged layer (`forged/`) |
+| Zero-copy runtime state (Arrow / Flight / DuckDB) | **Exoskeleton core** |
 | Edge telemetry | Ava007-Omni-OS |
 | Skill execution surfaces | Agent-X |
 | Persistent memory | QAG-MemBrain |

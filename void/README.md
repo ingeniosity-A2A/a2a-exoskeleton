@@ -1,41 +1,42 @@
-# Void — Ava007 Curation Workstation (Merged)
+# Tekton Core — Ava007 Curation Workstation
 
-**Status:** Merged 2026-09-16 into the official hierarchy.
+**Former name:** Void  
+**Status:** Merged 2026-09-16; brand updated to **Tekton Core** 2026-09-17.
 
-**Source:** [voideditor/void](https://github.com/voideditor/void) (VS Code fork, Apache 2.0 / MIT).  
-Development paused / repo archived; source remains the preferred **reference base** for Ava007’s local-first, zero-copy curation workstation.
+**Source reference:** [voideditor/void](https://github.com/voideditor/void) (VS Code fork, Apache 2.0 / MIT).  
+Folder path remains `void/` for git stability; **product name is Tekton Core**.
 
 ## Role in Hierarchy
 
 ```text
-Cybernetic-Ava007                    ← Intellect
-  └── a2a-exoskeleton                ← Substrate (this repo)
-        ├── void/                    ← Curation Workstation (this folder)
-        ├── forged-ai-filing-os      ← SPARC + turbovec intelligence layer
-        └── fapo-ran                 ← RAN capability
-              └── Ava007-Omni-OS
-                    └── Agent-X
+Cybernetic-Ava007
+  └── a2a-exoskeleton
+        ├── void/                 ← Tekton Core (curation workstation)
+        ├── forged/               ← Forged filing (merge in progress)
+        └── Ava007-Omni-OS       ← A2A / edge branch
+              └── Agent-X
 ```
 
-Void is **not** a second Intellect. It is the IDE / agent shell in which humans and Ava007 curate, separate, coordinate, refactor, and package intelligence before it is promoted through SPARC.
+Tekton Core is **not** a second Intellect. It is the IDE / agent shell where humans and Ava007 curate, separate, coordinate, refactor, and package intelligence **before** promotion through Forged / SPARC into the Exoskeleton runtime.
 
-## Critical Properties Kept
+## Critical Properties
 
-1. **No middleman backend** — prompts go directly to providers or local Ollama / vLLM / LM Studio.
-2. **Open source** — Apache 2.0 (Void) + MIT (VS Code base).
+1. **No middleman backend** — prompts go to providers or local Ollama / vLLM / LM Studio.
+2. **Open source** — Apache 2.0 + MIT base.
 3. **Agent Mode** + **Gather Mode** + checkpoints + MCP.
-4. **Type-safe** React 19 + Tailwind pipeline for contracts and BENTO-007 UI.
+4. Type-safe React + Tailwind for contracts and Bento UI.
 
 ## Documents in this folder
 
 | File | Purpose |
-|------|---------|
-| `SPARC_MAPPING.md` | Full layer-by-layer map onto Intake → Packaging → Training → UI |
-| `INTEGRATION_CHECKLIST.md` | Concrete steps to fork/adapt Void for Ava007 |
-| `HIERARCHY.md` | Position relative to Cybernetic-Ava007, QAG-MemBrain, Agent-X |
+|------|--------|
+| `SPARC_MAPPING.md` | Layer map onto Intake → Packaging → Training → UI |
+| `INTEGRATION_CHECKLIST.md` | Fork/adapt steps for Ava007 |
+| `HIERARCHY.md` | Position vs Cybernetic, QAG, Agent-X |
+| `TOKEN_TAX_DEFENSE.md` | Harness flaw vs Forged + Exoskeleton zero-copy path |
 
 ## Related
 
-- Full original mapping also lives in `forged-ai-filing-os/docs/VOID_SPARC_MAPPING.md`
-- Memory writes from Void MCP handlers → QAG-MemBrain / L1 Atom Store
-- Semantic search from Void → turbovec index (forged-ai-filing-os)
+- Mapping also in `forged-ai-filing-os/docs/VOID_SPARC_MAPPING.md` (legacy filename; content = Tekton Core)
+- Memory writes → QAG-MemBrain
+- Semantic search → turbovec (Forged layer)
