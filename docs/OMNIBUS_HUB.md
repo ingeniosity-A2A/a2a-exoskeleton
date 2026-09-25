@@ -1,11 +1,7 @@
-# Omnibus = A2A Communication Hub
+# Omnibus hub
 
-```text
-Cybernetic-Ava007 ──┐
-Agent-X ────────────┼──►  Omnibus (hub)  ──► contracts / receipts / promotes
-fapo-ran ───────────┘         │
-                              ▼
-                     Forged-Filing-Sys (forged/)
-```
+**Omnibus is not this repo.**
 
-QAG-MemBrain is not a hub peer; it is a legacy source fed **into** Omnibus.
+A2A communication hub lives in **[Ava007-Omni-OS](https://github.com/ingeniosity-A2A/Ava007-Omni-OS)** under `Omnibus/`.
+
+Exoskeleton issues `capability.request` and consumes contracts/receipts; it does not host the edge bridge, Agent Browser engine, or DragonOS control layer.

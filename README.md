@@ -1,33 +1,60 @@
 # a2a-exoskeleton
 
-**A2A Exoskeleton Ava007** — O(1) Context Orchestration Substrate | No-GPU Intelligence Stack | Dual-Tier DuckDB
+**O(1) Context Orchestration Substrate** — GSAP kernel, capability contracts, execution lifecycle.
 
-## Official Hierarchy
+Not intellect. Not the operating/capability environment. Not primary memory authority.
+
+## Official hierarchy
 
 ```text
-Cybernetic-Ava007
-  └── a2a-exoskeleton          ← YOU ARE HERE (substrate)
-        ├── forged-ai-filing-os   ← Forged filing MERGED into this substrate
-        ├── fapo-ran
-        └── Ava007-Omni-OS       ← A2A / EDGE BRANCH OF EXOSKELETON
-              └── Agent-X           ← Skills + consoles (client)
+CYBERNETIC-AVA007                         ← INTELLECT
+  reason · infer · learn · decide · adapt
+        │ Intent
+        ▼
+a2a-exoskeleton          ← THIS REPO      ← EXOSKELETON / ORGANISM
+  GSAP Kernel · capability contracts
+  discover → select → allocate → execute
+  → observe → interrupt → reverse → release
+        │ capability.request
+        ▼
+Ava007-Omni-OS                            ← OMNI-OS (environments)
+  edge · network · devices · browser
+  compute (CUDA/GPU workers) · containers
+        │
+   ┌────┼────┬──────────┐
+   ▼    ▼    ▼          ▼
+  S26  RevPi Oracle   Agent-X
+Termux Linux  GPU     skill execution
+
+Forged-Filing-Sys                         ← filing / memory surface (separate)
+fapo-ran                                  ← RAN only (separate)
 ```
 
-See [CONSOLIDATION.md](CONSOLIDATION.md) for merge plan and install rules.
+## What this repo owns
 
-## Branches / limbs
+| Owns | Does **not** own |
+|------|------------------|
+| GSAP Kernel orchestration | Primary intellect (Cybernetic-Ava007) |
+| Capability *contracts* and lifecycle | CUDA / PyTorch / TensorRT *workers* (Omni-OS) |
+| State composition · routing | Android / Termux / SDR *hardware planes* (Omni-OS) |
+| Substrate for void / curation workstation | Agent Browser *engine* (Omni-OS) |
+| Super-refactor observe/measure/propose | Full memory authority (Forged) |
+| | RAN (fapo-ran) |
 
-| Name | Role |
+**Rule:** Exoskeleton asks Omni-OS for capabilities. It does not embed Linux, GPU, modem, or browser stacks.
+
+## Related repos
+
+| Repo | Role |
 |------|------|
-| `main` | Core substrate |
-| `forged-ai-filing-os` | SPARC + turbovec + forging + Lens (merge in progress) |
-| `fapo-ran` | RAN / FAPO |
-| **Ava007-Omni-OS** (repo as A2A branch) | Edge bridge, Omnibus hub, Agent Browser ownership |
+| [Cybernetic-Ava007](https://github.com/ingeniosity-A2A/Cybernetic-Ava007) | Intellect |
+| [Ava007-Omni-OS](https://github.com/ingeniosity-A2A/Ava007-Omni-OS) | Environments / devices / compute / browser |
+| [Forged-Filing-Sys](https://github.com/ingeniosity-A2A/Forged-Filing-Sys) | Filing surface |
+| [Agent-X](https://github.com/ingeniosity-A2A/Agent-X) | Edge skill execution |
+| [fapo-ran](https://github.com/ingeniosity-A2A/fapo-ran) | RAN |
 
-## Boundary
+## Docs
 
-- This repo = **execution substrate** + Forged intelligence layer (merge).
-- Intellect → **Cybernetic-Ava007**.
-- Edge / A2A / Omnibus → **Ava007-Omni-OS** (branch of Exoskeleton).
-- Skills/consoles → **Agent-X** (does not own Agent Browser).
-- Memory → **QAG-MemBrain**.
+- [docs/ARCHITECTURE_BOUNDARIES.md](docs/ARCHITECTURE_BOUNDARIES.md) — hard boundaries
+- [docs/SOURCES_REGISTRY.md](docs/SOURCES_REGISTRY.md) — design source index
+- [CONSOLIDATION.md](CONSOLIDATION.md) — legacy merge notes (historical)
